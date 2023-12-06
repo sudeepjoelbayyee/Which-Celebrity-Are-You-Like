@@ -61,7 +61,7 @@ if uploaded_img is not None:
         features = extract_features(os.path.join('uploads',uploaded_img.name),model,detector)
         # recommend
         index_pos = recommend(feature_list,features)
-        predicted_actor = " ".join(filenames[index_pos].split('\')[1].split('_'))
+        predicted_actor = " ".join(filenames[index_pos].split('/')[1].split('_'))
 
         col1,col2 = st.columns(2)
         with col1:
