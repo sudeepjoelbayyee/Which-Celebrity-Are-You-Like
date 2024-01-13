@@ -1,4 +1,4 @@
-#!pip install streamlit
+import streamlit_prophet
 from keras_vggface.utils import preprocess_input
 from keras_vggface.vggface import VGGFace
 import pickle
