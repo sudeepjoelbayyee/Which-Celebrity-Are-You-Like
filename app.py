@@ -12,7 +12,7 @@ import numpy as np
 
 detector = MTCNN()
 model = VGGFace(model='resnet50',include_top=False,input_shape=(224,224,3),pooling='avg')
-feature_list = pickle.load(open('embedding.pkl','rb'))
+feature_list = pickle.load(open('embeddings.pkl','rb'))
 filenames = pickle.load(open('filenames.pkl','rb'))
 
 def save_uploaded_image(uploaded_image):
